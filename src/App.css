@@ -1,0 +1,105 @@
+
+/* NAVIGATION BAR STYLING  */
+.navBar {
+  display: flex;
+  background-color: RGB(116, 208, 248);
+}
+
+.navName {
+  background-color: white;
+  color: black;
+  padding: 25px 400px 25px 10px;
+}
+
+.navLinks {
+  display: flex;
+}
+
+.navLinks a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 50px 5px 50px;
+}
+
+
+
+/* HOME PAGE STYLING */
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.homeHeader {
+  text-align: center;
+  font-size: 2em;
+}
+
+.homeCity {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+/* ________ABOUT ME PAGE STYLING ________ */
+.aboutMeContainer{
+  display: flex;
+}
+
+.aboutMeContainer div{
+  padding: 55px 50px 55px 50px;
+}
+
+.aboutMeBio {
+}
+
+.aboutMePicDiv{
+  margin-left: 30px;
+}
+
+/* _________Projects Page___________ */
+.projectContainer{
+  display: flex;
+}
+.projectContainer div
+
+.techLabels label {
+  padding: 10px 25px 10px 25px;
+  margin: 10px auto 10px auto;
+
+}
+
+.projectImage img {
+  height:100%;
+  width: 100%;
+}
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectLink {
+  margin-top: 20px;
+}
+
+
+
+/* FOOTER STYLING */
+.navLinksFooter {
+  display: flex;
+  background-color: RGB(116, 208, 248);
+}
+
+.navLinksFooter a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 50px 5px 50px;
+  margin: 0 auto 0 auto
+}
+
+.footerTag{
+  text-align: center;
+  padding:5px 0 0 0
+}
