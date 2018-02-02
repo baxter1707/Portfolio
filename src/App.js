@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 class App extends Component {
   render() {
     return(
+    <div className='main-container'>
       <div className ='homePage'>
         <div className="homeHeader">
           <h1>Full-Stack Developer</h1>
@@ -14,6 +15,7 @@ class App extends Component {
           <h3>Houston, Texas</h3>
         </div>
       </div>
+    </div>
     )
   }
 }

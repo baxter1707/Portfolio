@@ -2,13 +2,14 @@
 /* NAVIGATION BAR STYLING  */
 .navBar {
   display: flex;
-  background-color: RGB(116, 208, 248);
+  background-color: RGB(12, 88, 153);
 }
 
 .navName {
-  background-color: white;
+  background-color: black;
   color: black;
-  padding: 25px 400px 25px 10px;
+  padding: .5em 0 .5em 0;
+  width:50%;
 }
 
 .navLinks {
@@ -17,89 +18,412 @@
 
 .navLinks a{
   display: flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
   padding: 5px 50px 5px 50px;
+  color: white;
+}
+
+.name {
+  font-size: 2.4em;
+  color:white;
+  margin:0 2em 0 2em;
+
+}
+
+.home {
+  background-color: RGB(85, 196,245);
+}
+.aboutMe {
+  background-color: RGB(30, 170, 241);
+}
+.projects {
+  background-color: RGB(22, 137, 207)
 }
 
 
+@media screen and (max-width: 768px){
+  .navBar {
+    flex-direction: column;
+    background-color: RGB(12, 88, 153);
+  }
+  .navName {
+    background-color: black;
+    padding: 10px 0 10px 0;
+    width:100%;
+  }
+  .navLinks {
+  flex-direction: column;
+  }
+}
+
 
 /* HOME PAGE STYLING */
+.main-container{
+background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Aerial_views_of_the_Houston%2C_Texas%2C_28005u.jpg/1200px-Aerial_views_of_the_Houston%2C_Texas%2C_28005u.jpg')
+}
+
 .homePage {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  background-color: rgba(35,62,79,.8);
+  height: 80VH;
 }
 
 .homeHeader {
   text-align: center;
   font-size: 2em;
+  color: white;
 }
 
 .homeCity {
   text-align: center;
   font-size: 1.3em;
+  color: RGB(27,156,226)
 }
 
 /* ________ABOUT ME PAGE STYLING ________ */
-.aboutMeContainer{
+.entireAboutme{
   display: flex;
 }
 
-.aboutMeContainer div{
-  padding: 55px 50px 55px 50px;
+.aboutMeContainer{
+  display: flex;
+
 }
 
+
 .aboutMeBio {
+  width: 50%;
+  background-color: RGB(85, 196,245);
+  color:white;
+  height: 300px;
+}
+.aboutMeBio p{
+padding:50px;
+align-items: center;
+justify-content: center;
 }
 
 .aboutMePicDiv{
-  margin-left: 30px;
+  width: 50%;
+  background-color: RGB(30, 170, 241);
+  height: 300px
 }
+.aboutMePicDiv img{
+  height: 70%;
+  width: 70%;
+  padding: 40px 100px 50px 100px;
+
+}
+
+
+
+.technologies {
+  display: flex;
+}
+
+.knowContainer {
+  width:50%;
+  height:300px;
+  background-color:  RGB(49, 49, 49);
+}
+
+.learnedContainer {
+  width: 50%;
+  height: 300px;
+  background-color: RGB(49, 49, 49);
+}
+
+.whatIknow {
+  color: RGB(30, 170 ,241);
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.learning {
+  color: RGB(30, 170 ,241);
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.icon{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 40px;
+}
+.knowContainer {
+  display: flex;
+  flex-direction: column;
+}
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin:10px 25px 10px 25px;
+}
+.skill-icon i{
+  font-size: 3em;
+  color: white;
+}
+
+.skill-icon label {
+  color: white;
+  font-size: .8em;
+}
+
+@media screen and (max-width: 768px){
+  .aboutMeContainer{
+    flex-direction: column;
+  }
+  .aboutMeBio {
+    width: 100%
+  }
+  .aboutMePicDiv{
+    width: 100%;
+  }
+  .technologies {
+    flex-direction: column;
+  }
+  .knowContainer{
+    width: 100%;
+  }
+  .learnedContainer{
+    width: 100%;
+  }
+  .skill-icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:5px 15px 5px 15px;
+  }
+  .skill-icon i{
+    font-size: 2em;
+  }
+}
+
+
 
 /* _________Projects Page___________ */
 .projectContainer{
   display: flex;
+  flex-wrap: wrap;
 }
-.projectContainer div
-
-.techLabels label {
-  padding: 10px 25px 10px 25px;
-  margin: 10px auto 10px auto;
-
+.project {
+  display: flex;
 }
-
-.projectImage img {
-  height:100%;
-  width: 100%;
-}
-.projectInfo {
+.projectInfo{
+  width:50%;
+  height: 300px;
   display: flex;
   flex-direction: column;
 }
 
-.projectLink {
+.projectTitle h3 {
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0 20px 0
+}
+.project p {
+  margin: 10px;
+  font-size: .9em;
+  text-align: justify;
+  padding:0 4em 0 2em;
+}
+
+.project-link-container{
+  display: flex;
+  margin-left: 20px;
+}
+
+.project-link-container div{
   margin-top: 20px;
+  border-style: solid;
+  border-color: rgb(22, 137, 207);
+}
+
+.projectLink {
+  padding: 5px 10px 5px 10px;
+}
+.project-video-link {
+  padding: 5px 10px 5px 10px;
+  background-color: white;
+}
+
+.gitButton{
+  text-decoration: none;
+  color:black;
+}
+
+.video-demo-button{
+  text-decoration: none;
+  color:RGB(22, 137, 207)
+}
+
+.video-demo-button-2{
+  text-decoration: none;
+  color:RGB(22, 137, 207)
+}
+
+.video-demo-button-3{
+  text-decoration: none;
+  color:RGB(22, 137, 207)
+}
+
+.projectImage{
+  width:50%;
+  background-color: RGB(22, 137, 207)
+}
+
+.techLabels{
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.techLabels label {
+  font-size: .9em;
+  background: RGB(22, 137, 207);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 7px 1px 0
+}
+
+.projectImage img {
+  height:80%;
+  width: 80%;
+  margin: 10px 50px 10px 50px;
 }
 
 
+.projectText  {
+  width:100%;
+  margin-left: 10px;
+}
+
+.project-image-2{
+  width:50%;
+  height: 300px;
+  background-color: RGB(22, 137, 207)
+}
+
+.project-image-2 img{
+  height:80%;
+  width: 80%;
+  margin: 10px 50px 10px 50px;
+}
+
+.project-info-2 {
+  width:50%;
+  height:300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image-3{
+  width:50%;
+  height: 300px;
+  background-color: RGB(22, 137, 207)
+}
+
+.project-image-3 img{
+  height:80%;
+  width: 80%;
+  margin: 10px 50px 10px 50px;
+}
+
+.project-info-3 {
+  width:50%;
+  height:300px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px){
+  .project{
+    flex-direction: column;
+  }
+  .projectInfo {
+    width:100%;
+  }
+  .projectImage{
+    display:none;
+  }
+  .project-image-2{
+    display:none;
+  }
+  .project-info-2{
+    width:100%;
+    background-color: RGB(22, 137, 207)
+  }
+  .project-info-3{
+    width:100%;
+  }
+  .project-image-3{
+    display: none;
+  }
+}
+
 
 /* FOOTER STYLING */
+.footer{
+  display: flex;
+  flex-direction: column;
+}
+
 .navLinksFooter {
   display: flex;
+  height:3em;
   background-color: RGB(116, 208, 248);
 }
 
 .navLinksFooter a{
   display: flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
-  padding: 5px 50px 5px 50px;
-  margin: 0 auto 0 auto
+  color: white;
+  font-size: 1.5em;
 }
 
 .footerTag{
   text-align: center;
-  padding:5px 0 0 0
+  padding:5px 0 0 0;
+  background-color: RGB(12,88,153);
+  color: white;
+
+}
+
+.email {
+  background-color: RGB(9, 64, 108);
+}
+
+.gitHub {
+  background-color:  RGB(12, 88, 153);
+}
+
+.linkedin {
+  background-color: RGB(22, 137, 207);
+}
+
+.medium {
+  background-color: RGB(30, 170, 241);
+}
+
+.resume {
+  background-color: RGB(85, 196,245);
+}
+
+
+
+@media screen and (max-width: 768px){
+  .navLinksFooter{
+  }
+  .navLinksFooter a{
+    font-size: 1em;
+  }
 }
