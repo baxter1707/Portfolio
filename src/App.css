@@ -114,9 +114,9 @@ justify-content: center;
   height: 300px
 }
 .aboutMePicDiv img{
-  height: 70%;
-  width: 70%;
-  padding: 40px 100px 50px 100px;
+  height:80%;
+  width: 40%;
+  padding: 25px 150px 1px 165px;
 
 }
 
@@ -308,7 +308,7 @@ justify-content: center;
 .project-image-2{
   width:50%;
   height: 300px;
-  background-color: RGB(22, 137, 207)
+  background-color: RGB(22, 137, 207);
 }
 
 .project-image-2 img{

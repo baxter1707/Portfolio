@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 
+const divStyle = {
+    display : 'none'
+};
+
+const heightAdjust = {
+  height: '80VH'
+}
+
 export class Projects extends Component {
   render(){
     return(
-<div className='projectContainer'>
+<div style = {heightAdjust} className='projectContainer'>
   <div className='project'>
         <div className='projectInfo'>
           <div className='projectTitle'>
@@ -25,7 +33,7 @@ export class Projects extends Component {
             <div className = 'projectLink'>
               <Link to = 'https://github.com/baxter1707/pokedex' target ='_blank' className='gitButton'>GitHub </Link>
             </div>
-            <div className='project-video-link'>
+            <div style={divStyle} className='project-video-link'>
               <Link to = 'https://github.com/baxter1707/pokedex' target ='_blank' className='video-demo-button'> Video Demo</Link>
             </div>
           </div>
@@ -41,7 +49,7 @@ export class Projects extends Component {
 
 
 
-  <div className ='project'>
+  <div style={divStyle} className ='project'>
         <div className='project-image-2'>
           <img src="http://www.sandiegovips.com/wp-content/uploads/2014/05/test-image.jpeg" />
         </div>
@@ -73,7 +81,7 @@ export class Projects extends Component {
   </div>
 
 
-  <div className ='project'>
+  <div style={divStyle} className ='project'>
 
         <div className='project-info-3'>
         <div className='projectTitle'>
