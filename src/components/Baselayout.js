@@ -43,11 +43,11 @@ export class Footer extends Component {
       <div className="footer">
 
         <div className='navLinksFooter'>
-          <Link to='mailto: Michael_steven.baxter@yahoo.com' className= 'email' target= '_blank'><MdEmail/></Link>
+          <Link to='mailto: MichaelBaxter1707@gmail.com' className= 'email' target= '_blank'><MdEmail/></Link>
           <Link to = 'https://github.com/baxter1707' className='gitHub' target="_blank"><GoMarkGithub/></Link>
           <Link to = 'https://www.linkedin.com/in/michael-baxter-b138b114b/' className='linkedin' target='_blank'> <FaLinkedinSquare/></Link>
           <Link to = 'https://medium.com/@michael_steven.baxter' className='medium' target='_blank'> <FaMedium/></Link>
-          <Link to = 'https://medium.com/@michael_steven.baxter' className='resume' target='_blank'> <FaFilePdfO/></Link>
+          <Link to = 'https://drive.google.com/file/d/1D3ZG1DYlMflLryb0KFGgSxbIhwTDyFtt/view?usp=sharing' className='resume' target='_blank'> <FaFilePdfO/></Link>
         </div>
 
         <div className = 'footerTag'>

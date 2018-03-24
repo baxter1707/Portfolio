@@ -7,7 +7,11 @@ export class AboutMe extends Component {
     <div className='entireAboutMe'>
       <div className='aboutMeContainer'>
         <div className='aboutMeBio'>
-          <p> I have a background in Home Automation, Networking, and Audio/Visual. I have always had an interest in technology, and software development is a challenging and fun to learn progression. I went to college to be a Music Education Major, and have over 15+ years experience as a Percussionist. I also enjoy the outdoors and some of those hobbies are Fishing, Ultimate Frisbee, and Kayaking.  </p>
+          <p> Michael Baxter's tech industry journey began when he was just a child. His parents tell stories of him fixing the TV, home computer, and being curious of any electronic placed in front of him. Transitioning from music education, Michael began his tech career specializing in home automation, networking, and audio/visual components. His interest in the industry continued to grow as he was constantly researching fun and new software solutions. In 2017, Michael dove into software development leaving. 'I enjoy the challenge coding brings', Michael says. 'It's fun and rewarding to continue learning in this ever progressing industry'. </p>
+
+          <p>
+
+          In his free time, he enjoys life's adventures with his wife, AnneMarie, and doggo, Serenity. You can often find him enjoying the outdoors rather he is fishing, kayaking, or playing Ultimate Frisbee. Michael still utilizes his music background as a Percussionist, with over 15 years experience, by playing duets with his wife.  </p>
         </div>
 
         <div className="aboutMePicDiv">
@@ -84,7 +88,7 @@ export class AboutMe extends Component {
             <i className="devicon-mongodb-plain"></i>
           </div>
           <div className='skill-icon'>
-            <label>REACT </label>
+            <label>REACT/REDUX </label>
             <i className="devicon-react-original"></i>
           </div>
           <div className='skill-icon'>

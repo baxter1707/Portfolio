@@ -61,7 +61,8 @@
 
 /* HOME PAGE STYLING */
 .main-container{
-background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Aerial_views_of_the_Houston%2C_Texas%2C_28005u.jpg/1200px-Aerial_views_of_the_Houston%2C_Texas%2C_28005u.jpg')
+background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Aerial_views_of_the_Houston%2C_Texas%2C_28005u.jpg/1200px-Aerial_views_of_the_Houston%2C_Texas%2C_28005u.jpg');
+background-size: cover;
 }
 
 .homePage {
@@ -100,7 +101,7 @@ background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60
   width: 50%;
   background-color: RGB(85, 196,245);
   color:white;
-  height: 300px;
+  height: auto;
 }
 .aboutMeBio p{
 padding:50px;
@@ -111,12 +112,17 @@ justify-content: center;
 .aboutMePicDiv{
   width: 50%;
   background-color: RGB(30, 170, 241);
-  height: 300px
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 2.5%;
+  padding-bottom: 1%;
 }
 .aboutMePicDiv img{
   height:80%;
   width: 40%;
-  padding: 25px 150px 1px 165px;
+
+
 
 }
 
@@ -128,13 +134,14 @@ justify-content: center;
 
 .knowContainer {
   width:50%;
-  height:300px;
+  height:auto;
   background-color:  RGB(49, 49, 49);
+
 }
 
 .learnedContainer {
   width: 50%;
-  height: 300px;
+  height: auto;
   background-color: RGB(49, 49, 49);
 }
 
@@ -142,6 +149,7 @@ justify-content: center;
   color: RGB(30, 170 ,241);
   font-size: 1.8em;
   text-align: center;
+
 }
 
 .learning {
@@ -153,7 +161,9 @@ justify-content: center;
 .icon{
   display: flex;
   flex-wrap: wrap;
-  padding-left: 40px;
+
+  align-content: center;
+  justify-content: center;
 }
 .knowContainer {
   display: flex;
@@ -173,6 +183,11 @@ justify-content: center;
 .skill-icon label {
   color: white;
   font-size: .8em;
+}
+
+.aboutMeBio p {
+  padding-top:0;
+  padding-bottom:0
 }
 
 @media screen and (max-width: 768px){
@@ -198,7 +213,7 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin:5px 15px 5px 15px;
+
   }
   .skill-icon i{
     font-size: 2em;
@@ -214,10 +229,11 @@ justify-content: center;
 }
 .project {
   display: flex;
+  width:100%;
+  height:auto;
 }
 .projectInfo{
   width:50%;
-  height: 300px;
   display: flex;
   flex-direction: column;
 }
@@ -238,6 +254,7 @@ justify-content: center;
 .project-link-container{
   display: flex;
   margin-left: 20px;
+
 }
 
 .project-link-container div{
@@ -319,7 +336,6 @@ justify-content: center;
 
 .project-info-2 {
   width:50%;
-  height:300px;
   display: flex;
   flex-direction: column;
 }
@@ -338,7 +354,6 @@ justify-content: center;
 
 .project-info-3 {
   width:50%;
-  height:300px;
   display: flex;
   flex-direction: column;
 }
@@ -365,6 +380,9 @@ justify-content: center;
   }
   .project-image-3{
     display: none;
+  }
+  .project-link-container {
+    margin-bottom: 1em;
   }
 }
 
